@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame2Web - The Digital Forge</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="scroll-container">
+        <!-- Scene 0: Staggered Welcome -->
+        <section class="content-section">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-semibold">
+                    <span class="welcome-text">Welcome</span>
+                    <span class="welcome-text ml-4">to</span>
+                </h1>
+                <h1 class="welcome-text text-6xl md:text-8xl font-black uppercase">FRAME2WEB</h1>
+            </div>
+        </section>
+
+        <!-- Scene 1: Slogan 1 -->
+        <section class="content-section">
+            <h2 class="slogan-heading">we design everything</h2>
+        </section>
+
+        <!-- Scene 2: Slogan 2 -->
+        <section class="content-section">
+            <h2 class="slogan-heading">your vision, our innovation</h2>
+        </section>
+
+        <!-- Scene 3: The Blueprint -->
+        <section class="content-section">
+            <h2 class="section-heading text-5xl md:text-7xl">The Blueprint</h2>
+            <p class="section-subheading">Every masterpiece begins with a plan. We architect robust, scalable solutions for web development and secure your assets with meticulous penetration testing.</p>
+            <button class="action-button">Learn More</button>
+        </section>
+
+        <!-- Scene 4: The Forge -->
+        <section class="content-section">
+            <h2 class="section-heading text-5xl md:text-7xl">The Forge</h2>
+            <p class="section-subheading">Ideas are forged into reality. With cutting-edge technology, we render breathtaking 3D videos and build the core of your digital presence.</p>
+            <button class="action-button">Learn More</button>
+        </section>
+
+        <!-- Scene 5: The Polish -->
+        <section class="content-section">
+            <h2 class="section-heading text-5xl md:text-7xl">The Polish</h2>
+            <p class="section-subheading">Perfection is in the details. We refine, optimize, and edit every pixel and every frame until your project shines with unparalleled quality.</p>
+            <button class="action-button">Learn More</button>
+        </section>
+
+        <!-- Scene 6: The Invitation -->
+        <section class="content-section">
+            <div id="contact-container">
+                <h2 class="text-4xl font-bold mb-4">Let's Forge The Future</h2>
+                <p class="mb-8 text-lg text-gray-300">Have a project in mind? We'd love to hear about it.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="mailto:youremail@example.com?subject=Project Inquiry from Frame2Web" class="action-button text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        Start via Email
+                    </a>
+                    <a href="https://www.instagram.com/your-username" target="_blank" rel="noopener noreferrer" class="action-button text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        DM on Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 3D Canvas -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Robust Script Loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.163.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.163.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.163.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.163.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.163.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.163.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    
+    <!-- Main JavaScript File (defer ensures it runs after HTML is parsed) -->
+    <script src="main.js" defer></script>
+</body>
+</html>
